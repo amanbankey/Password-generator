@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>mini_project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+       <div id="container">
+          <h1>Password Generator</h1>
+          <div class="display-container">
+            <input type="text" placeholder="Password" class="display" data-passwordDisplay >
+            <button data-copy>
+                <span data-copyMsg> </span>
+                <img id="im" src="imge.jpg" alt="copy" width="24" height="23" >
+            </button>
+          </div>
+
+           <div class="input-container">
+               <!--checkboxes-->
+               <div class="length-container">
+                  <p>Password Length</p>
+                  <p data-lengthNumber >0</p>
+               </div>
+               <!--checkboxes-->
+               <input type="range" min="1" max="20" class="slider" step="1" data-lengthSlider>
+               <!--checkboxes-->
+               <div class="labels">
+                   <input type="checkbox" id="uppercase">
+                   <label for="uppercase">Includes Uppercase letters</label><br>
+
+                   <input type="checkbox" id="lowercase">
+                   <label for="lowercase">Includes lowercase letters</label><br>
+
+                   <input type="checkbox" id="numbers">
+                   <label for="numbers">Includes numbers letters</label><br>  
+
+                   <input type="checkbox" id="symbols">
+                   <label for="symbols">Includes symbols letters</label>
+               </div>
+               <div class="strength-container">
+                   <p>Strength</p>
+                   <div data-indicator></div>
+               </div>
+               <button class="generateBtn"> Generate Password </button>
+           </div>
+       </div>
+       <script src="script.js"></script>
+</body>
+</html>

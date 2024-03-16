@@ -1,0 +1,114 @@
+*,
+*::before,
+*::after{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+:root{ 
+    --dk-violet: hsl(268,75%, 9%);
+    --lt-violet: hsl(268,47%, 21%); 
+      /* height: 100%; */
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(90deg, rgba(238, 130, 238, 1) 42%, rgba(0, 209, 255, 1) 100%);
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+   
+}
+#container{
+    /* width: 90%; */
+    max-width: 800px;
+    /* border: 10px solid  white; */
+}
+h1{
+    color:  white;
+    opacity: 0.75;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+    line-height: 1.2;
+}
+.display-container{
+    /* display: flex; */
+    justify-self: justify-content;
+    position: relative;
+    background-color: var(--dk-violet);
+    border-radius: 1rem;
+    border-bottom: 0.35 solid var(--lt-violet);
+    margin: 1rem 0;
+    padding: 0.35rem;
+    border: 3px solid white;
+    box-shadow: 0 5px white;
+}
+
+.display{
+    width: 100%;
+    background-color: transparent;
+    color: var(--vb-yellow);
+    font-weight: 600;
+    color:  white;
+    font-size: 1.5rem;
+    line-height: 30px;
+    letter-spacing: 1px;
+    padding-right: 3.25rem;
+    border: none;
+
+}
+.display::placeholder{
+    position: absolute;
+    top: 15%;
+    left: 1.3rem;
+    font-size: 1.2rem;
+    line-height: 30px;
+    color: yellow;
+    opacity: 0.65;
+    text-transform: uppercase;
+}
+.display-container button{
+    position: absolute;
+    top: 50%;
+    right: 1.5rem;
+    transform: translateY(-50%);
+} 
+.input-container{
+    width: 100%;
+    background-color: var(--dk-violet);
+    border-radius: 1rem;
+    padding: 2rem;
+    
+}
+.length-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: aqua;
+    margin: 10px;
+}
+.strength-container{
+    color: aqua;
+    margin: 20px;
+}
+label{
+    color: aqua;
+}
+input{
+    margin: 5px;
+    border: 30px solid red;
+}
+.generateBtn{
+    padding: 8px 129px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color: rgb(176, 52, 166);
+    font-weight: 550;
+    color: white;
+    box-shadow: 0 3px white;
+}
+
